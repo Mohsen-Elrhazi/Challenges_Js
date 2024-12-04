@@ -44,8 +44,9 @@ main{
 main .niveau{
     width:100%;
     /* height:140px; */
-    background-color:#A0EACF;
-    padding:30px 10px 10px;
+    background-color:#71b79d;
+    /* color:#c31818; */
+    padding:20px 10px;
     display: flex;
     flex-direction: column;
     gap:40px;
@@ -73,12 +74,12 @@ main .niveau .challenges{
 main .niveau .challenges a{
     width:18%;
     height:80px;
-    background-color:#82acc5;
+    background-color:#1f5d81;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration:none;
-    color:#000;
+    color:#fff;
     font-size:18px;
     /* font-weight:bold; */
     letter-spacing: 2px;
@@ -87,6 +88,6 @@ main .niveau .challenges a{
    }
 
    main .niveau .challenges a:hover{
-    background-color:#40728f;
+    background-color:#18384b;
 
    }

@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <style>
+
+    body{
+        /* position: relative; */
+    }
+    button {
+      position: absolute;
+      padding: 12px 10px;
+      border: none;
+      background-color: #f15151;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .fa-house{
+        position:absolute;
+        right:40px;
+        bottom:50px;
+        font-size:34px;
+        background-color: #9acdb3;
+        padding:6px;
+        border-radius:6px ;
+        color: black;
+        opacity: 0.6;
+        transition: .3s ease;
+    }
+
+    .fa-house:hover{
+        opacity:1;
+        
+    }
+  </style>
+
+  <body id="body">
+
+    <button id="btn-change-coleur">Changer la coleur de page</button>
+    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+
+   <!--! script Js -->
+    <script>
+      let btn = document.getElementById("btn-change-coleur");
+      let body=document.getElementById("body")
+      btn.addEventListener("click", function () {
+        if(body.style.backgroundColor==="white"){
+        body.style.backgroundColor="green"
+        }else{
+        body.style.backgroundColor="white"
+        }
+      });
+    </script>
+  </body>
 </html>
